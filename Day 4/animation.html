@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>automation</title>
+    <style type="text/css">
+        div
+        {
+            height: 200px;
+            width: 200px;
+            transition: 3s;
+            font-size: 25px;
+            font-weight: bold;
+            background-color: rgb(97, 188, 220);
+            background-image: url("wall.jpg");
+        }
+      
+        #TranslateDiv:hover
+        {
+            transform: translate(100px,100px);
+            background-color: rgb(54, 156, 156);
+            color: rgb(244, 103, 190);
+        }
+
+        #RotateDiv:hover
+        {
+            -webkit-transform:rotate(360dge);
+            -moz-transform: rotate(360dge);
+            -ms-transform: rotate(360dge);
+            -o-transform: rotate(360dge);
+            transform: rotate(360dge);
+            background-color: rgb(54, 156, 156);
+            color: rgb(244, 103, 190);
+        }
+
+        #RotateDiv3D:hover
+        {
+            transform: rotate3D(1,1,0,360dge);
+            background-color: rgb(153, 0, 255);
+            color: rgb(255, 153, 0);
+        }
+
+        #SkewDiv:hover
+        {
+            transform: skew(90deg);
+            background-color: rgb(246, 111, 246);
+            color: rgb(49, 8, 115);
+        }
+
+        #ScaleDiv:hover
+        {
+            transform: scale(0.5,1.5);
+            background-color: rgb(235, 77, 125);
+            color: rgb(59, 27, 16);
+        }
+        #OpacityDiv:hover
+        {
+           background-color: rgb(154, 112, 76);
+           opacity:0.8;
+        }
+        
+        #RGBADiv:hover
+        {
+            background-color: rgb(75, 80, 132);
+        }
+
+        #BoxShadowDiv:hover
+        {
+            box-shadow: 0px 0px 40px rgb(210, 47, 194);
+        }
+
+        #TextShadowDiv:hover
+        {
+            text-shadow:3px 3px 3px rgb(243, 243, 29);
+        }
+
+        #BorderRadiusDiv:hover
+        {
+            border-radius: 50%;
+            background-color: rgb(97, 207, 234);
+        }
+
+        #OverFlowDiv{overflow: auto;}
+
+
+    </style>
+    
+</head>
+<body>
+    <div id="TranslateDiv"> Translate </div><hr />
+    <div id="RotateDiv">Rotate</div><hr />
+    <div id="RotateDiv3D">Rotate3D</div><hr />
+    <div id="SkewDiv">Skew</div><hr />
+    <div id="ScaleDiv">Scale</div><hr />
+    <div id="OpacityDiv">Opacity</div><hr />
+    <div id="RGBADiv">RGBA</div><hr /> 
+    <div id="BoxShadowDiv">Box-Shadow</div><hr />
+    <div id="TextShadowDiv">Text-Shadow</div><hr />
+    <div id="BorderRadiusDiv">Border Radius</div><hr />
+    <div id="OverFlowDiv">Overflow</div>
+
+</body>
+</html>
