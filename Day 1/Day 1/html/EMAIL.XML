@@ -1,0 +1,7 @@
+<?xml version ="1.0" encoding="ISO-8859-1"?>
+<email>
+<to>friend</to>
+<from>XYZ</from>
+<subject>Reminder</subject>
+<body>today is holiday</body>
+</email>

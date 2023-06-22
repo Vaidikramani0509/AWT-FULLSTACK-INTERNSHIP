@@ -1,0 +1,27 @@
+<?xml version ="1.0" encoding="ISO-8859-1"?>
+<bookstore>
+<book>
+  <name>you can win</name>
+  <author>salvin collo</author>
+  <price>599</price>
+  <publication>themedia</publication>
+</book>
+<book>
+  <name>bhagavad gita</name>
+  <author>maharashi vyas</author>
+  <price>999</price>
+  <publication>thekrishnatimes</publication>
+</book>
+<book>
+  <name>pyschology of money</name>
+  <author>la ca daso pillo</author>
+  <price>700</price>
+  <publication>navneet</publication>
+</book>
+<book>
+  <name>grace of god</name>
+  <author>scarlet jonson</author>
+  <price>429</price>
+  <publication>gala</publication>
+</book>
+</bookstore>
