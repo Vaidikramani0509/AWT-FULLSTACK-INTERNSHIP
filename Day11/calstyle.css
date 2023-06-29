@@ -1,0 +1,157 @@
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    }
+    
+    #calculator {
+    margin: 0 auto;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    }
+    
+    input[type="button"] {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px;
+    } */
+
+body {
+    font-family: arial, sans-serif;
+    text-align: center;
+    background-image: url(download.jfif);
+
+}
+
+.btn.btn-border-1::after,
+.btn.btn-border-1::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    /* visibility: hidden; */
+}
+
+.btn.btn-border-1::after {
+    bottom: -3px;
+    right: -3px;
+    border-left: 3px solid #fc0505;
+    border-bottom: 3px solid #f00505;
+    transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+}
+
+.btn.btn-border-1::before {
+    top: -3px;
+    left: -3px;
+    border-top: 3px solid #f80505;
+    border-right: 3px solid #fd0000;
+    transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+}
+
+.btn.btn-border-1:hover {
+    animation: pulse 1s ease-out .4s;
+    color: #fcfbfb;
+}
+
+.btn.btn-border-1:hover::after,
+.btn.btn-border-1:hover::before {
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    visibility: visible;
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn.btn-border-1:hover::after {
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn.btn-border-1:hover::before {
+    transition: width .1s ease, height .1s ease .1s;
+}
+
+
+h2 {
+    color: rgb(253, 251, 251);
+    background-color: #870de8;
+}
+
+h2:hover {
+    background-color: red;
+}
+
+#calculator {
+    margin: 0 auto;
+    width: 300px;
+    /* height: 150px; */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input[type="button"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 5px;
+    border: 1px solid;
+
+    /* animation: anime 0.6s infinite ; */
+}
+
+input[type="text"] {
+    height: 20px;
+    width: 300px;
+    background-color: whitesmoke;
+
+}
+input[type="text"]:hover {
+    background-color: rgb(7, 23, 240);
+}
+input[type="button"]:hover {
+    background-color: rgb(250, 73, 73);
+}
+.btn-1::after,
+.btn-1::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: .5s;
+}
+.btn-1::after{
+    top: -9px;
+    left: -9px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.btn-1::before{
+    bottom: -9px;
+    right: -9px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+.btn-1:hover::after,
+.btn-1:hover::before{
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    border-color: #f30606;
+}
+/* 
+    @keyframes anime{
+        0%{
+            background-color: black;
+        }
+        20%{
+            background-color: blue;
+        }
+        80%{
+            background-color: blueviolet;
+        }
+        100%{
+            background-color: aquamarine;
+        } */

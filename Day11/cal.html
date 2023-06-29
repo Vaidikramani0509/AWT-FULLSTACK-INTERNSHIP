@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" href="calstyle.css">
+</head>
+<body>
+<h2>Calculator </h2>
+<div id="calculator">
+<input type="text" id="display" disabled>
+<br>
+<input class="btn-1" type="button" value="1" onclick="addToDisplay('1')">
+<input class="btn-2"type="button" value="2" onclick="addToDisplay('2')">
+<input class="btn-3" type="button" value="3" onclick="addToDisplay('3')">
+<br>
+<input type="button" value="4" onclick="addToDisplay('4')">
+<input type="button" value="5" onclick="addToDisplay('5')">
+<input type="button" value="6" onclick="addToDisplay('6')">
+<br>
+<input type="button" value="7" onclick="addToDisplay('7')">
+<input type="button" value="8" onclick="addToDisplay('8')">
+<input type="button" value="9" onclick="addToDisplay('9')">
+<br>
+<input type="button" value="+" onclick="addToDisplay('+')">
+<input type="button" value="0" onclick="addToDisplay('0')">
+<input type="button" value="=" onclick="calculate('=')">
+<br>
+<input type="button" value="." onclick="addToDisplay('.')">
+<input type="button" value="-" onclick="addToDisplay('-')">
+<input type="button" value="/" onclick="addToDisplay('/')">
+<br>
+<input type="button" value="%" onclick="addToDisplay('%')">
+<input type="button" value="*" onclick="addToDisplay('*')">
+<input type="button" value="C" onclick="clearDisplay()">
+</div>
+<a class="btn btn-border-1" href="">I'm a button</a>
+</body>
+<script src="script.js"></script>
+</html>
