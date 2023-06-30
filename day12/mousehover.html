@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Hover</title>
+</head>
+<body>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+   style="background-color: blueviolet; height: 20px; width: 60px; padding: 20px;"
+    >Silver</div>
+    <script>
+        function mOver(obj){
+            obj.innerHTML = "Oak"
+        }
+        function mOut(obj){
+            obj.innerHTML = "University"
+        }
+    </script>
+</body>
+</html>
